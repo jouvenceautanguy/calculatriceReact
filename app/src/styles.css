@@ -1,0 +1,63 @@
+.divGlobale {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centre verticalement */
+    align-items: center; /* centre horizontalement */
+    height: 100vh; /* utilise 100% de la hauteur de la fenêtre */
+    
+  }
+  
+  .numberList,
+  .operatorList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 220px;
+    background-color: #212121;
+    padding : 10px;
+  }
+  
+  .numberList button,
+  .operatorList button {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .numberList button:hover,
+  .operatorList button:hover {
+    background-color: #ddd;
+  }
+  
+  .numberList button:active,
+  .operatorList button:active {
+    background-color: #ccc;
+  }
+  
+  .operatorList button:nth-child(4n+1) {
+    background-color: #fff;
+  }
+  
+  .operatorList button:nth-child(4n+1):hover {
+    background-color: #f5f5f5;
+  }
+  
+  .operatorList button:nth-child(4n+1):active {
+    background-color: #f0f0f0;
+  }
+  
+  #display {
+    width: 220px;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    margin: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+  }
